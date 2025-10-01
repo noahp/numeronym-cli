@@ -2,6 +2,17 @@
 name = "numeronym-cli"
 version = "0.1.0"
 edition = "2024"
+authors = ["Noah Pendleton"]
+description = "A CLI tool that generates numeronym abbreviations from text"
+readme = "README.md"
+repository = "https://github.com/noahp/numeronym-cli"
+license = "MIT"
+keywords = ["cli", "numeronym", "abbreviation", "text-processing"]
+categories = ["command-line-utilities", "text-processing"]
+
+[[bin]]
+name = "numeronym-cli"
+path = "src/main.rs"
 
 [dependencies]
 clap = { version = "4.4", features = ["derive"] }
