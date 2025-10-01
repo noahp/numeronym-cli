@@ -36,7 +36,7 @@ Pass one or more words as arguments. The tool preserves punctuation and
 whitespace because even chaos needs some order:
 
 ```bash
-❯ numeronym-cli "it's super fun making idiotic abbreviations!"
+❯ numeronym-cli "it's super fun making idiotic abbreviations\!"
 i1s s3r f1n m5g i5c a11s!
 ```
 
@@ -46,7 +46,7 @@ i18n a11y k8s
 ```
 
 ```bash
-❯ numeronym-cli "Hello, world!"
+❯ numeronym-cli "Hello, world\!"
 H3o, w3d!
 ```
 
