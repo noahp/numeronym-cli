@@ -37,7 +37,7 @@ whitespace because even chaos needs some order:
 
 ```bash
 ❯ numeronym-cli "it's super fun making idiotic abbreviations\!"
-i1s s3r f1n m5g i5c a11s!
+it's s3r f1n m5g i5c a11s!
 ```
 
 ```bash
