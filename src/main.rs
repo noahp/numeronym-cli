@@ -10,7 +10,7 @@ use std::fs;
 #[derive(Parser)]
 #[command(name = "numeronym")]
 #[command(about = "Generate numeronym abbreviations from text")]
-#[command(version = "0.2.0")]
+#[command(version = "0.2.1")]
 struct Args {
     /// Text to convert to/from numeronyms
     #[arg(required = true)]

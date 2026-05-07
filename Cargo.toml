@@ -1,6 +1,6 @@
 [package]
 name = "numeronym-cli"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 authors = ["Noah Pendleton"]
 description = "A CLI tool that generates numeronym abbreviations from text"
