@@ -1,5 +1,7 @@
 # numeronym-cli
 
+[![Crates.io](https://img.shields.io/crates/v/numeronym-cli?style=for-the-badge)](https://crates.io/crates/numeronym-cli)
+
 A Rust CLI tool that generates numeronym abbreviations because apparently we
 needed to make text even less readable than it already is.
 
@@ -50,6 +52,35 @@ i18n a11y k8s
 H3o, w3d!
 ```
 
+## Undoing the damage (`--undo`)
+
+If you've received a numeronym and have absolutely no idea what it means,
+`--undo` looks up candidate words from `/usr/share/dict/words`:
+
+```bash
+❯ numeronym-cli --undo o11y
+o11y:
+  objectionably
+  obstructively
+  operationally
+  ophthalmology
+  orthogonality
+  outstandingly
+```
+
+```bash
+❯ numeronym-cli --undo k8s
+k8s:
+  kerchieves
+  keypunches
+  keystrokes
+  kickstands
+  ...
+```
+
+Override the dictionary with `--dict /path/to/wordlist` if your system keeps
+it somewhere else (or you want a domain-specific list).
+
 ## Why does this exist?
 
 Great question! I ask myself the same thing every day. Apparently the tech
@@ -63,6 +94,7 @@ trying to remember what `l10n` means at 2 AM.
 ## Features
 
 - ✅ Converts words to numeronyms (unfortunately)
+- ✅ Reverses numeronyms back to candidate words (`--undo`)
 - ✅ Preserves punctuation (the only good thing here)
 - ✅ Handles multiple words in a single command
 - ✅ Makes your text objectively worse to read
